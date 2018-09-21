@@ -1,0 +1,82 @@
+
+/* Responsive contact form starts here 
+--------------------------------------------- */
+
+.form_box {
+    /* transform: translate(-50%, -50%); */
+    width: 350px;
+    /* height: 630px; */
+    padding: 40px;
+    background: #ED6400;
+    box-sizing:  border-box;
+    box-shadow: 0 15px 25px #A0A3A8;
+    border-radius: 2px;
+    opacity: 0.95;
+    z-index: 30;
+    margin: 0 auto;
+}
+
+.form_box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.form_box .inputBox {
+    position: relative;
+}
+
+.form_box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.form_box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -15;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form_box .inputBox input:focus ~ label,
+.form_box .inputBox input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: #141519;
+    font-size: 12px;
+}
+
+.form_box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #141519;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.form_box input[type="submit"]:hover {
+    color: #141519;
+    background: #ffffff;
+    transition:background-color 0.3s ease-in-out;
+    box-shadow: 0 5px 15px #141519;
+} 
