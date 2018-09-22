@@ -140,6 +140,7 @@ p .light {
   color: black;
 }
 
+
 /* Home page "PORTFOLIO" animation 
 --------------------------------------------- */
 .portfolio {
@@ -374,6 +375,13 @@ grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
+.tfny-logo {
+  width: 30px;
+  opacity: 0.7;
+  float: left;
+  padding-left: 100px;
+}
+
 /* Responsive webpage media queries  
 --------------------------------------------- */
 @media (max-width: 1200px) {
@@ -509,6 +517,15 @@ grid-column: 2 / 3;
   .container_showcase .box_showcase .imgContent p {
     font-size: 12px;
   }
+
+  .tfny-logo img{
+    width: 150px;
+  }
+
+  .tfny-logo {
+    float: left;
+    padding-left: 40px;
+  }
 }
 
 
@@ -539,6 +556,5 @@ grid-column: 2 / 3;
   .skills p {
     font-size: 19px;
   }
-
 
 }
