@@ -7,6 +7,11 @@
   padding:0;
 }
 
+html
+{
+ scroll-behavior: smooth;
+}
+
 h1 {
   color: #ED6400;
   font-family: 'Roboto', sans-serif;
@@ -20,13 +25,33 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+p .extrabold {
+  font-weight: 900;
+}
 
-/* Navigation menu starts here 
+p .bold {
+  font-weight: 700;
+}
+
+p .semibold {
+  font-weight: 600;
+}
+
+p .medium {
+  font-weight: 400;
+}
+
+p .light {
+  font-weight: 100;
+}
+
+
+/* Navigation menu
 --------------------------------------------- */
 .nav_bar {
     position: fixed;
-    top: 52%;
-    padding-left: 30px;
+    top: 12%;
+    padding-left: 20px;
     z-index: 10;
 }
 
@@ -36,7 +61,7 @@ p {
     padding: 0;
     white-space: nowrap;
     line-height: 2em;
-    transform: rotate(270deg);
+    transform: rotate(90deg);
     transform-origin: 0;
 } 
   
@@ -86,9 +111,9 @@ p {
 }
 
 .box {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 
 .scroll {
@@ -104,6 +129,10 @@ p {
 .portfolio-box {
   display: flex;
   justify-content: center;
+  align-content: space-around;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  overflow: visible;
 }
 
 .grid-two {
@@ -140,7 +169,7 @@ p {
 }
 
 
-/* Title page "PORTFOLIO" animation 
+/* Home page "PORTFOLIO" animation 
 --------------------------------------------- */
 .portfolio {
   display: grid;
@@ -148,7 +177,6 @@ p {
   grid-template-columns: repeat(3, 1fr);
   height: 150px;
   width: 150px;
-
 }
     
 .letter {
@@ -156,7 +184,7 @@ p {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 90px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #ED6400;
@@ -204,31 +232,66 @@ p {
 }
 
 @keyframes letter_flicker {
-  0% {color: #141519; content:'P'; font-weight: light;}
-  25% {color: #FFFFFF; content:'Q'; font-weight: bold;}
-  50% {color: #ED6400; content:'T'; font-weight: normal;}
-  75% {color: #141519; content:'G'; font-weight: light;}
-  100% {color: #ED6400; content:'P'; font-weight: normal;}
+  0% {color: #141519; font-weight: light;}
+  25% {color: #FFF; font-weight: bold;}
+  50% {color: #ED6400; font-weight: normal;}
+  75% {color: #141519; font-weight: light;}
+  100% {color: #ED6400; font-weight: normal;}
 }
 
 
-
-/* Scroll image 
+/* Home page
 --------------------------------------------- */
+.myname-box-smallscreen {
+  display:flex;
+  flex-direction: column-reverse;
+  /* justify-content: space-around; */
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  padding-left: 50px;
+  padding-bottom: 150%;
+  visibility: hidden;
+} 
+
+.myname-box-smallscreen p {
+  color: #A141519;
+  font-size: 12px;
+  text-align: right;
+  writing-mode: vertical-lr;
+}
+
+.myname-box-widescreen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
+
+.myname-box-widescreen p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
 .scroll {
 z-index: 20;
 display: flex;
 justify-content: center;
+grid-row: 3 / 4;
+grid-column: 2 / 3;
 }
 
 
 
-/* About Me section starts here 
+/* About Me section 
 --------------------------------------------- */
 .about_me h1 {
   text-align: right;
   display: flex;
   justify-content: flex-start;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 
 .photo {
@@ -236,6 +299,8 @@ justify-content: center;
   transform: rotate(-15deg);
   display: flex;
   justify-content: flex-end;
+  grid-row: 2 / 3;
+  grid-area: 3 / 4;
 }
 
 .about_me p {
@@ -246,10 +311,11 @@ justify-content: center;
   color: #141519;
   margin-top: 20px;
   display: block;
+  
 }
 
 
-/* Skills section starts here 
+/* Skills & Interests section 
 --------------------------------------------- */
 .skills h1 {
   text-align: right;
@@ -267,26 +333,112 @@ justify-content: center;
   top: 20px;
 }
 
-.skills p .bold {
-  font-weight: 800;
-}
-
-.skills p .semibold {
-  font-weight: 600;
-}
-
-.skills p .medium {
-  font-weight: 400;
-}
-
-.skills p .light {
-  font-weight: 100;
-}
-
 .skills_logo {
   align-self: flex-end;
   margin-bottom: 50px;
   margin-right: 30px;
 }
 
+/* Responsive webpage media queries starts here 
+--------------------------------------------- */
+@media (max-width: 1200px) {
+  .myname-box-widescreen {
+    visibility: visible;
+    font-size: 20px;
+  }
 
+  .myname-box-widescreen p {
+    font-size: 20px;
+  }
+
+  .myname-box-smallscreen {
+    visibility: hidden;
+  }
+  
+  .letter {
+    font-size: 80px;
+  }
+
+  .container_showcase {
+      width: 800px;
+      height: auto;
+      margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+      width: calc(400px - 30px);
+      height: calc(300px - 30px);
+  }
+}
+
+@media (max-width: 800px) {
+  .myname-box-widescreen {
+  visibility: visible;
+  }
+
+  .myname-box-widescreen p {
+    font-size: 16px;
+  }
+
+  .myname-box-smallscreen {
+    visibility: hidden;
+  }
+
+  .letter {
+    font-size: 70px;
+  }
+  
+  .container_showcase {
+      width: 600px;
+      height: auto;
+      margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+      width: calc(300px - 30px);
+      height: calc(225px - 30px);
+  }
+}
+
+@media (max-width: 640px) {
+  .myname-box-widescreen {
+    visibility: hidden;
+  }
+
+  .myname-box-smallscreen {
+    visibility: visible;
+  }
+
+  .letter {
+    font-size: 55px;
+  }
+
+  .container_showcase {
+      width: 100%;
+      height: auto;
+      margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+      width: calc(300px - 30px);
+      height: calc(200px - 30px);
+      margin: 15px auto;
+      float: none;
+  }
+}
+
+
+@media (max-height: 740px) {
+  .myname-box-widescreen {
+    visibility: hidden;
+  }
+
+  .myname-box-smallscreen {
+    visibility: visible;
+    padding-bottom: 115%;
+  }
+
+  .myname-box-smallscreen p {
+    font-size: 10px;
+  }
+}

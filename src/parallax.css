@@ -1,4 +1,6 @@
 
+/* Responsive parallax scrolling 
+--------------------------------------------- */
 .parallax {
     height: 500px; /* fallback for older browsers */
     height: 100vh;
@@ -70,7 +72,6 @@
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    
   }
   
   #group2 {

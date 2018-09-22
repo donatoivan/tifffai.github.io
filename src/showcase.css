@@ -1,5 +1,5 @@
 
-/* Showcase gallery animation section 
+/* Showcase gallery animation 
  --------------------------------------------- */
 .container_showcase {
     width: 1200px;
@@ -101,43 +101,3 @@
     transition-delay: 0.2s;
 }
 
-@media (max-width: 1200px) {
-    .container_showcase {
-        width: 800px;
-        height: auto;
-        margin: 80px auto 80px;
-    }
-
-    .container_showcase .box_showcase {
-        width: calc(400px - 30px);
-        height: calc(300px - 30px);
-    }
-}
-
-@media (max-width: 800px) {
-    .container_showcase {
-        width: 600px;
-        height: auto;
-        margin: 80px auto 80px;
-    }
-
-    .container_showcase .box_showcase {
-        width: calc(300px - 30px);
-        height: calc(225px - 30px);
-    }
-}
-
-@media (max-width: 600px) {
-    .container_showcase {
-        width: 100%;
-        height: auto;
-        margin: 80px auto 80px;
-    }
-
-    .container_showcase .box_showcase {
-        width: calc(300px - 30px);
-        height: calc(200px - 30px);
-        margin: 15px auto;
-        float: none;
-    }
-}

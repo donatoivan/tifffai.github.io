@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tfny Designs Portfolio</title>
-  <link href="./style.css" type="text/css" rel="stylesheet">
+  <link href="src/style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto+Condensed|Roboto:400,900" rel="stylesheet">
 </head>
 
@@ -24,8 +24,6 @@
   <div class="parallax">
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base titlepage_alignmen grid-one home" id="home">
-        <div class="box"></div>
-        <div class="box"></div>
         <div class="box portfolio-box">
           <div class="portfolio">
             <div class="letter letter_p">P</div>
@@ -39,26 +37,26 @@
             <div class="letter letter_o3">O</div>
           </div>
         </div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box myname-box-smallscreen">
+            <p class=myname-smallscreen><span class="light">WEB DEVELOPER · UX/UI DESIGNER · FOOD BLOGGER</span> <br> <span class="light">TIFFANY</span><span class="semibold">FAI</span></p>
+        </div>
+        <div class="box myname-box-widescreen">
+          <p class=myname-widescreen><span class="light">TIFFANY</span><span class="semibold">FAI</span> <br> <span class="light">WEB DEVELOPER · UX/UI DESIGNER · FOOD BLOGGER</span></p>
+        </div>
         <div class="scroll"><img src="/assets/scroll_black.svg" alt="scroll" width="100px">
         </div>
-        <div class="box"></div>
       </div>
     </div>
 
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--base grid-two about_me" id="about_me">
-        <div class="box"></div>
+        <!-- <div class="box"></div> -->
         <div class="box about-heading-box">
           <h1>ABOUT <br> ME</h1>
           <img src="/assets/profile_photo.png" alt="photo of Tiffany" width="130px" class="photo">
         </div>
-        <div class="box"></div>
-        <div class="box">
-        </div>
+        <!-- <div class="box"></div> -->
+        <!-- <div class="box"></div> -->
         <div class="box bio">
           <p>Hi, I’m Tiffany. I’m a junior developer with a love for full-stack, fashion and fitness that enjoys
             understanding what makes people and programs tick.</p>
@@ -70,21 +68,21 @@
             beyond my mental and physical limits is what excites me the most and where the best and most interesting
             work comes from!</p>
         </div>
-        <div class="box"></div>
+        <!-- <div class="box"></div> -->
       </div>
       <div class="parallax__layer parallax__layer--back">
-        <div class="title"></div>
+        <!-- <div class="title"></div> -->
       </div>
     </div>
 
     <div id="group3" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore grid-three skills" id="skills">
+      <div class="parallax__layer parallax__layer--fore grid-three skills">
         <div class="box scroll-space"></div>
         <div class="box skills_description">
-          <h1>SKILLS & </br> INTERESTS</h1>
+          <h1 id="skills">SKILLS & </br> INTERESTS</h1>
         </div>
         <div class="box"></div>
-        <div class="box">4</div>
+        <div class="box"></div>
         <div class="box">
           <p>ADOBE <span class="medium">PHOTOSHOP</span> <span class="semibold">branding</span> ILLUSTRATOR <span class="bold">AFTER EFFECTS</span> LIGHTROOM interactive designs <span class="light">XD</span> HTML <span class="semibold">CSS</span> RUBY <span class="bold">RUBY ON RAILS</span> MONGODB <span class="medium">EXPRESS</span> <span class="bold">JAVASCRIPT</span> REACT <span class="semibold">NODEJS</span> photography MYSQL <span class="medium">VUE.JS</span> POSTGRESQL</p>
         </div>
@@ -98,10 +96,10 @@
     </div>
 
     <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore grid-four showcase" id="showcase">
+      <div class="parallax__layer parallax__layer--fore grid-four showcase" >
         <div class="box scroll-space"></div>
         <div class="box">
-          <h1>SHOWCASE</h1>
+          <h1 id="showcase">SHOWCASE</h1>
         </div>
         <div class="box"></div>
         <div class="box"></div>
@@ -125,7 +123,7 @@
                 </div>
     </div>
         </div>
-        <div class="box">6</div>
+        <div class="box"></div>
       </div>
       <div class="parallax__layer parallax__layer--base">
         <div class="title"></div>
@@ -141,22 +139,22 @@
               <div class="parallax__layer parallax__layer--deep">
                 <div class="title">Deep Background Layer 2</div>
               </div>
-            </div> -->
-    <div id="group5" class="parallax__group">
+            </div>
+    <div id="group5" class="parallax__group"> -->
       <div class="parallax__layer--fore">
         <!-- <div class="title">FORM OVERLAY</div> -->
       </div>
       <div class="parallax__layer--base grid-five contact" id="contact">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
         <div class="box form_box form-position">
             <div class="form-heading">
             <h2>GET IN TOUCH</h2>
             </div>
 
-            <form action="https://formspree.io/deartfny@gmail.com"
+            <form action="https://formspree.io/faitiffany@gmail.com"
             method="POST">
                 <div class="inputBox">
                     <input type="text" id="name" name="" required="">
@@ -173,18 +171,10 @@
                 <input type="submit" name="" value="Submit">
             </form>
         </div>
-        <div class="box">6</div>
+        <div class="box"></div>
       </div>
     </div>
   </div>
-  <!-- <div id="group6" class="parallax__group">
-              <div class="parallax__layer parallax__layer--back">
-                <div class="title">Background Layer 5</div>
-              </div>
-              <div class="parallax__layer parallax__layer--base">
-                <div class="title">Base Laye 5r</div>
-              </div>
-          </div> -->
 
 </body>
 
