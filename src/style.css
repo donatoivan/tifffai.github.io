@@ -111,7 +111,7 @@ p .light {
 }
 
 .box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 30px;
   color: black;
 }
@@ -311,7 +311,7 @@ grid-column: 2 / 3;
   color: #141519;
   margin-top: 20px;
   display: block;
-  
+
 }
 
 
