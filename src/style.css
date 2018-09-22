@@ -130,17 +130,12 @@ p .light {
 .grid-five {
   display: grid;
   height: 100vh;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 4fr 0.5fr;
   grid-template-columns: 2fr 3fr 2fr;
   padding: 0;
   margin: 0;
 }
 
-.box {
-  /* border: 1px solid black; */
-  font-size: 30px;
-  color: black;
-}
 
 
 /* Home page "PORTFOLIO" animation 
@@ -248,12 +243,12 @@ p .light {
 }
 
 .scroll {
-z-index: 20;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-grid-row: 3 / 4;
-grid-column: 2 / 3;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
 }
 
 .scroll-space {
@@ -356,6 +351,7 @@ grid-column: 2 / 3;
   grid-column: 2 / 4;
 }
 
+
 /* Showcase section 
 --------------------------------------------- */
 .showcase-title-box {
@@ -370,51 +366,36 @@ grid-column: 2 / 3;
   grid-column: 2 / 3;
 }
 
+
 /* Contact Me section 
 --------------------------------------------- */
-.contact-heading {
-  grid-column: 1 / 4;
-  grid-row: 2 / 3;
-  color: #fff;
-  font-size: 36px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  z-index: 11;
-  padding-top: 45px;
-}
-
 .form-position {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
-
-.form-heading {
-  visibility: hidden;
 }
 
 .form-heading h2 {
   font-size: 70px;
 }
 
-.social-media-box {
+.mylogo {
+  grid-row: 1 / 2;
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  z-index: 11;
-  padding-left: 10px;
-  padding-bottom: 10px;
 }
 
-.tfny-logo img {
+.mylogo img {
   width: 200px;
 }
 
-.tfny-logo {
-  opacity: 0.7;
-  float: left;
-  padding-left: 80px;
+.social-media-box {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 10px;
 }
 
 
@@ -458,14 +439,6 @@ grid-column: 2 / 3;
       height: calc(300px - 30px);
   }
 
-  .tfny-logo img{
-    width: 180px;
-  }
-
-  .tfny-logo {
-    float: left;
-    padding-left: 50px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -510,14 +483,6 @@ grid-column: 2 / 3;
     font-size: 12px;
   }
 
-  .tfny-logo img{
-    width: 150px;
-  }
-
-  .tfny-logo {
-    float: left;
-    padding-left: 40px;
-  }
 
 }
 
@@ -577,21 +542,9 @@ grid-column: 2 / 3;
       margin: 15px auto;
       float: none;
   }
-
-  .tfny-logo img{
-    visibility: hidden;
-  }
-
-  .tfny-logo-smallscreen img{
-    width: 130px;
-  }
-
-  .tfny-logo-smallscreen {
-    visibility: visible;
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    display: flex;
-    align-items: flex-end;
+  
+  .mylogo img {
+    width: 150px;
   }
 
   .contact-heading {
@@ -602,7 +555,7 @@ grid-column: 2 / 3;
   }
 
   .form-heading h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .social-media-box {

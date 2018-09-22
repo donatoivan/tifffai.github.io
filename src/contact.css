@@ -7,10 +7,9 @@
     padding: 40px;
     background: #ED6400;
     box-sizing:  border-box;
-    box-shadow: 0 15px 0 #A0A3A8;
     border-radius: 2px;
     opacity: 0.95;
-    z-index: 10;
+    z-index: 30;
     margin: 0 auto;
 }
 
@@ -70,6 +69,7 @@
     padding: 10px 50px;
     cursor: pointer;
     border-radius: 0px;
+    -webkit-appearance: none;
 }
 
 .form_box input[type="submit"]:hover {
@@ -77,4 +77,5 @@
     background: #ffffff;
     transition:background-color 0.3s ease-in-out;
     box-shadow: 0 5px 15px #141519;
+    -webkit-appearance: none;
 } 
