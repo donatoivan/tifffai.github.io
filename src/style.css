@@ -96,10 +96,6 @@ p .light {
     color: #141519;
 }
 
-.form-heading {
-  display: flex;
-}
-
 
 /* Grid setups
 --------------------------------------------- */
@@ -357,6 +353,20 @@ grid-column: 2 / 3;
   grid-column: 2 / 4;
 }
 
+/* Showcase section 
+--------------------------------------------- */
+.showcase-title-box {
+  grid-row: 1 / 2;
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container_showcase {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
 /* Contact Me section 
 --------------------------------------------- */
 .form-position {
@@ -389,7 +399,9 @@ grid-column: 2 / 3;
     font-size: 80px;
   }
 
-
+  .skills-logo-box img{
+    width: 400px;
+  }
 
   .container_showcase {
       width: 800px;
@@ -409,22 +421,22 @@ grid-column: 2 / 3;
     font-size: 80px;
   }
 
-  .myname-box-widescreen {
-  visibility: visible;
-  }
-
   .myname-box-widescreen p {
     font-size: 16px;
-  }
-
-  .myname-box-smallscreen {
-    visibility: hidden;
   }
 
   .letter {
     font-size: 70px;
   }
   
+  .skills p {
+  font-size: 25px;
+  }
+
+  .skills-logo-box img{
+    width: 300px;
+  }
+
   .container_showcase {
       width: 600px;
       height: auto;
@@ -470,7 +482,11 @@ grid-column: 2 / 3;
   }
 
   .skills p {
-    font-size: 20px;
+    font-size: 24px;
+  }
+
+  .showcase h1 {
+    font-size: 50px; f
   }
 
   .container_showcase {
@@ -485,18 +501,21 @@ grid-column: 2 / 3;
       margin: 15px auto;
       float: none;
   }
+
+  .container_showcase .box_showcase .imgContent h3 {
+    font-size: 20px;
+  }
+
+  .container_showcase .box_showcase .imgContent p {
+    font-size: 12px;
+  }
 }
 
 
-@media (max-height: 740px) {
-  .myname-box-widescreen {
-    visibility: hidden;
-  }
+@media (max-height: 750px) {
 
   .myname-box-smallscreen {
-    visibility: visible;
     padding-bottom: 100%;
-    transition: 1s;
   }
 
   .myname-box-smallscreen p {
@@ -506,11 +525,6 @@ grid-column: 2 / 3;
   .photo {
     width: 100px;
     margin-top: 80%;
-  }
-
-  .about_me p {
-    font-size: 12px;
-    max-width: 400px;
   }
 
   .bio-box {
@@ -523,7 +537,7 @@ grid-column: 2 / 3;
   }
 
   .skills p {
-    font-size: 12px;
+    font-size: 19px;
   }
 
 
