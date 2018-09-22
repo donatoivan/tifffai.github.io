@@ -37,6 +37,7 @@
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    -webkit-appearance: none;
 }
 
 .form_box .inputBox label {
@@ -50,6 +51,7 @@
     color: #fff;
     pointer-events: none;
     transition: .5s;
+    -webkit-appearance: none;
 }
 
 .form_box .inputBox input:focus ~ label,
