@@ -132,6 +132,7 @@ p .light {
   margin: 0;
 }
 
+
 /* Home page
 --------------------------------------------- */
 .myname-box-smallscreen {
@@ -462,7 +463,6 @@ p .light {
 }
 
 
-
 /* Small devices (landscape phones, 815px and down) */
 @media only screen and (max-width: 815px) and (orientation: landscape) {
   
@@ -613,6 +613,7 @@ p .light {
 
   .skills-description-box {
     margin-left: 10%;
+    /* margin-right: 15%; */
     width: 80%;
   }
 
@@ -621,7 +622,7 @@ p .light {
   }
 
   .skills-logo-box img {
-    width: 230px;
+    width: 200px;
     height: auto;
   }
 
@@ -633,6 +634,10 @@ p .light {
     width: 100%;
     height: auto;
     margin: 80px auto 80px;
+  }
+
+  .showcase-position-box {
+    transform: translate(15%, -45%)
   }
 
   .container_showcase .box_showcase {
