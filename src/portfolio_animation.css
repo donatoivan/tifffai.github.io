@@ -1,0 +1,72 @@
+
+/* Home page "PORTFOLIO" animation 
+--------------------------------------------- */
+
+.portfolio {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 150px;
+    width: 150px;
+  }
+      
+  .letter {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ED6400;
+  }
+      
+  
+  .letter_p {
+    animation-name: letter_flicker;
+    animation-delay: 0;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: 2; 
+  }
+  
+  .letter_r {
+    animation-name: letter_flicker;
+    animation-delay: 0.4s;
+    animation-duration: 1.7s;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: 3; 
+  }
+  
+  .letter_t {
+    animation-name: letter_flicker;
+    animation-delay: 0.1s;
+    animation-duration: 2.2s;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: 4; 
+  }
+  
+  .letter_f {
+    animation-name: letter_flicker;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: 4; 
+  }
+  
+  .letter_o3 {
+    animation-name: letter_flicker;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: 3; 
+  }
+  
+  @keyframes letter_flicker {
+    0% {color: #141519; font-weight: light;}
+    25% {color: #FFF; font-weight: bold;}
+    50% {color: #ED6400; font-weight: normal;}
+    75% {color: #141519; font-weight: light;}
+    100% {color: #ED6400; font-weight: normal;}
+  }
+  

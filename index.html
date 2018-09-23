@@ -61,12 +61,14 @@
           <img src="/assets/profile_photo.png" alt="photo of Tiffany" width="130px" class="photo">
         </div>
         <div class="box bio-box">
-          <p>Hi, I’m Tiffany. I’m a junior developer with a love for full-stack, fashion and fitness that enjoys
-            understanding what makes people and programs tick.</p>
-          <p>With an electric work background and upbringing spanning across all the world, I’m an adaptable, empathic
-            and positive programmer that can roll with the punches. One of the greatest feelings is the satisfaction
-            that comes from helping someone solve a problem or overcome an obstacle and this is what drives my
-            motivation.</p>
+          <div class="bio">
+            <p>Hi, I’m Tiffany. I’m a junior developer with a love for full-stack, fashion and fitness that enjoys
+              understanding what makes people and programs tick.</p>
+            <p>With an electric work background and upbringing spanning across all the world, I’m an adaptable, empathic
+              and positive programmer that can roll with the punches. One of the greatest feelings is the satisfaction
+              that comes from helping someone solve a problem or overcome an obstacle and this is what drives my
+              motivation.</p>
+          </div>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--back">
@@ -77,7 +79,6 @@
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore grid-three skills">
         <div class="box scroll-space"></div>
-        <!-- <span class="anchor" id="skills"></span> -->
         <div class="box skills-title-box">
           <h1 id="skills">SKILLS &<br>INTERESTS</h1>
         </div>
@@ -88,7 +89,7 @@
             REACT <span class="semibold">NODEJS</span> photography MYSQL <span class="medium">VUE.JS</span> POSTGRESQL</p>
         </div>
         <div class="box skills-logo-box">
-          <img src="/assets/skill_logos_orange.png" alt="skills logos" width="500px">
+          <img src="/assets/skill_logos_orange.png" alt="skills logos">
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base">
@@ -102,25 +103,27 @@
         <div class="box showcase-title-box">
           <h1 id="showcase">SHOWCASE</h1>
         </div>
-        <div class="box container_showcase">
-          <div class="box_showcase">
-            <div class="imgBox">
-              <img src="/assets/rubistroopie_title.png" alt="Photo of Stroop Effect Terminal App Game">
+        <div class="showcase-position-box">
+          <div class="box container_showcase">
+              <div class="box_showcase">
+                <div class="imgBox">
+                  <img src="/assets/rubistroopie_title.png" alt="Photo of Stroop Effect Terminal App Game">
+                </div>
+                <div class="imgContent">
+                  <h3>Stroop Effect Terminal App Game</h3>
+                  <p>RubiStroopie is based on the popular psychology test on reaction time. Developed in Ruby - check it
+                    out
+                    in my Github</p>
+                </div>
             </div>
-            <div class="imgContent">
-              <h3>Stroop Effect Terminal App Game</h3>
-              <p>RubiStroopie is based on the popular psychology test on reaction time. Developed in Ruby - check it
-                out
-                in my Github</p>
-            </div>
-          </div>
-          <div class="box_showcase">
-            <div class="imgBox">
-              <img src="/assets/kaiseki_hakone.jpg" alt="">
-            </div>
-            <div class="imgContent">
-              <h3>Food Photography</h3>
-              <p>Collection of food photography on my Instragram.</p>
+            <div class="box_showcase">
+              <div class="imgBox">
+                <img src="/assets/kaiseki_hakone.jpg" alt="">
+              </div>
+              <div class="imgContent">
+                <h3>Food Photography</h3>
+                <p>Collection of food photography on my Instragram.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -137,9 +140,6 @@
     </div>
     <div class="parallax__layer--base grid-five contact" id="contact">
       <div class="box scroll-space"></div>
-      <div class="mylogo">
-          <img src="/assets/tfnylogo_v2_grey.svg" alt="Tiffany Fai Logo" height="200px">
-      </div>
       <div class="box form_box form-position">
         <div class="form-heading">
           <h2>GET IN TOUCH</h2>
@@ -159,6 +159,9 @@
           </div>
           <input type="submit" name="" value="Submit">
         </form>
+      </div>
+      <div class="mylogo-box">
+          <img src="/assets/tfnylogo_v2_grey.svg" alt="Tiffany Fai Logo">
       </div>
       <div class="social-media-box">
           <a href="https://au.linkedin.com/"><img src="/assets/Tilda_Icons_26sn_linkedin.svg" alt="Linkedin Link"></a>
