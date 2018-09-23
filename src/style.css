@@ -157,6 +157,7 @@ p .light {
   align-items: flex-end;
   grid-row: 2 / 3;
   grid-column: 1 / 4;
+  visibility: visible;
 }
 
 .myname-box-widescreen p {
@@ -261,6 +262,7 @@ p .light {
   max-width: 800px;
   font-weight: 300;
   top: 20px;
+  z-index: 13;
 }
 
 .skills-logo-box {
@@ -290,8 +292,8 @@ p .light {
 .showcase-position-box {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
-  display: flex;
-  align-self: flex-start;
+  position: absolute;
+  transform: translate(-10%, -50%)
 }
 
 
@@ -346,11 +348,68 @@ p .light {
 /* Responsive webpage media queries  
 --------------------------------------------- */
 
-/* Small and shorter devices (phones, 750px height and down) */
-@media only screen and (max-height: 750px) and (orientation: portrait){
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
 
   h1 {
-    font-size: 55px;
+    font-size: 100px;
+  }
+
+  .myname-box-widescreen p {
+    font-size: 20px;
+  }
+  
+  .letter {
+    font-size: 90px;
+  }
+
+  .bio-box {
+    width: 65%;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+
+  .bio-box p {
+    font-size: 18px;
+    margin-top: 18px;
+  }  
+
+  .skills-description-box {
+    padding-left: 10%;
+  }
+
+  .skills-logo-box img{
+    width: 350px;
+  }
+
+  .showcase h1 {
+    font-size: 60px;
+    padding-right: 10%;
+  }
+
+  .container_showcase {
+    width: 700px;
+    height: auto;
+    margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+  }
+
+  .form_box h2 {
+    font-size: 40px;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 80px;
   }
 
   .myname-box-widescreen {
@@ -360,41 +419,104 @@ p .light {
   .myname-box-smallscreen {
     visibility: visible;
   }
-  .myname-box-smallscreen {
-    padding-bottom: 100%;
-  }
 
-  .myname-box-smallscreen p {
-    font-size: 10px;
+  .myname-box-widescreen p {
+    font-size: 16px;
   }
 
   .letter {
-    font-size: 45px;
+    font-size: 60px;
+  }
+  
+  .skills p {
+  font-size: 25px;
+  padding-left: 20%;
+  }
+
+  .skills-logo-box img{
+    width: 300px;
+  }
+
+  .container_showcase {
+    width: 600px;
+    height: auto;
+    margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+    width: calc(300px - 30px);
+    height: calc(225px - 30px);
+  }
+
+  .container_showcase .box_showcase .imgContent h3 {
+    font-size: 20px;
+  }
+
+  .container_showcase .box_showcase .imgContent p {
+    font-size: 12px;
+  }
+
+  .form_box h2 {
+    font-size: 40px;
+  }
+}
+
+
+
+/* Small devices (landscape phones, 815px and down) */
+@media only screen and (max-width: 815px) and (orientation: landscape) {
+  
+  .nav li {
+    font-size: 10px;
+  }
+
+  .nav_bar {
+    position: fixed;
+    top: 4%;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .myname-box-widescreen {
+    visibility: visible;
+  }
+
+  .myname-box-widescreen p {
+    font-size: 12px;
+  }
+
+  .myname-box-smallscreen {
+    visibility: hidden;
+  }
+
+  .letter {
+    font-size: 50px;
   }
 
   .photo {
     width: 80px;
-    margin-top: 80%;
+    margin-top: 5%;
+    float: right;
   }
 
   .bio-box {
-    width: 75%;
-    display: flex;
+    width: 80%;
     margin-left: 8%;
-    margin-right: 5%;
+    margin-right: 10%;
+    margin-top: 30%;
+    grid-row: 1 / 3;
   }
 
   .bio-box p {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 12px;
   }
 
-  .skills h1 {
-    font-size: 44px;
-  }
-
   .skills-description-box {
-    margin-left: 10%;
+    margin-left: 5%;
+    width: 83%;
   }
 
   .skills p {
@@ -402,12 +524,20 @@ p .light {
   }
 
   .skills-logo-box img {
-    width: 200px;
+    width: 170px;
   }
 
-  .showcase h1 {
-    font-size: 42px;
-  }  
+  .container_showcase {
+    width: 550px;
+    height: auto;
+    margin: 80px auto 80px;
+  }
+
+  .container_showcase .box_showcase {
+    width: calc(280px - 30px);
+    height: calc(180px - 30px);
+    margin: 15px 5px;
+  }
 
   .container_showcase .box_showcase .imgContent h3 {
     font-size: 14px;
@@ -417,11 +547,27 @@ p .light {
     font-size: 11px;
   }
 
-  .mylogo-box img {
-    width: 100px;
-    padding-left: 10px;
-  }  
+  .form_box h2 {
+    font-size: 0px;
+  }
 
+  .form_box {
+    width: 280px;
+    height: 110vh;
+    padding: 20px;
+  }
+
+  .contact-title-box-landscape {
+    visibility: visible;
+  }
+
+  .mylogo img {
+    width: 100px;
+  }
+  
+  .mylogo-box {
+    grid-column: 3 / 4;
+  }
 }
 
 
@@ -520,60 +666,56 @@ p .light {
   }
 }
 
-/* Small devices (landscape phones, 640px and up) */
-@media only screen and (max-width: 815px) and (orientation: landscape) {
-  
-  .nav li {
-    font-size: 10px;
-  }
 
-  .nav_bar {
-    position: fixed;
-    top: 4%;
-  }
+/* Small and shorter devices (phones, 750px height and down) */
+@media only screen and (max-height: 750px) and (orientation: portrait){
 
   h1 {
     font-size: 55px;
   }
 
   .myname-box-widescreen {
-    visibility: visible;
-  }
-
-  .myname-box-widescreen p {
-    font-size: 12px;
-  }
-
-  .myname-box-smallscreen {
     visibility: hidden;
   }
 
+  .myname-box-smallscreen {
+    visibility: visible;
+  }
+  .myname-box-smallscreen {
+    padding-bottom: 100%;
+  }
+
+  .myname-box-smallscreen p {
+    font-size: 10px;
+  }
+
   .letter {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .photo {
     width: 80px;
-    margin-top: 5%;
-    float: right;
+    margin-top: 80%;
   }
 
   .bio-box {
-    width: 80%;
+    width: 75%;
+    display: flex;
     margin-left: 8%;
-    margin-right: 10%;
-    margin-top: 30%;
-    grid-row: 1 / 3;
+    margin-right: 5%;
   }
 
   .bio-box p {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 12px;
   }
 
+  .skills h1 {
+    font-size: 44px;
+  }
+
   .skills-description-box {
-    margin-left: 5%;
-    width: 83%;
+    margin-left: 10%;
   }
 
   .skills p {
@@ -582,20 +724,11 @@ p .light {
 
   .skills-logo-box img {
     width: 200px;
-    height: auto;
   }
 
-  .container_showcase {
-    width: 550px;
-    height: auto;
-    margin: 80px auto 80px;
-  }
-
-  .container_showcase .box_showcase {
-    width: calc(280px - 30px);
-    height: calc(180px - 30px);
-    margin: 15px 5px;
-  }
+  .showcase h1 {
+    font-size: 42px;
+  }  
 
   .container_showcase .box_showcase .imgContent h3 {
     font-size: 14px;
@@ -605,121 +738,9 @@ p .light {
     font-size: 11px;
   }
 
-  .form_box h2 {
-    font-size: 0px;
-  }
-
-  .form_box {
-    width: 280px;
-    height: 110vh;
-    padding: 20px;
-  }
-
-  .contact-title-box-landscape {
-    visibility: visible;
-  }
-
-  .mylogo img {
+  .mylogo-box img {
     width: 100px;
-  }
-  
-  .mylogo-box {
-    grid-column: 3 / 4;
-  }
-
-  
+    padding-left: 10px;
+  }  
 
 }
- 
-
-
-
-}
-
-/* INSERT NEXT MEDIA QUERY ABOVE THIS LINE ################################## */
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  h1 {
-    font-size: 100px;
-  }
-
-  .myname-box-widescreen p {
-    font-size: 20px;
-  }
-  
-  .letter {
-    font-size: 80px;
-  }
-
-  .skills-logo-box img{
-    width: 350px;
-  }
-
-  .container_showcase {
-    width: 800px;
-    height: auto;
-    margin: 80px auto 80px;
-  }
-
-  .container_showcase .box_showcase {
-    width: calc(400px - 30px);
-    height: calc(300px - 30px);
-  }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-  h1 {
-    font-size: 80px;
-  }
-
-  .myname-box-widescreen {
-    visibility: hidden;
-  }
-
-  .myname-box-smallscreen {
-    visibility: visible;
-  }
-
-  .myname-box-widescreen p {
-    font-size: 16px;
-  }
-
-  .letter {
-    font-size: 60px;
-  }
-  
-  .skills p {
-  font-size: 25px;
-  }
-
-  .skills-logo-box img{
-    width: 280px;
-  }
-
-  .container_showcase {
-    width: 600px;
-    height: auto;
-    margin: 80px auto 80px;
-  }
-
-  .container_showcase .box_showcase {
-    width: calc(300px - 30px);
-    height: calc(225px - 30px);
-  }
-
-  .container_showcase .box_showcase .imgContent h3 {
-    font-size: 20px;
-  }
-
-  .container_showcase .box_showcase .imgContent p {
-    font-size: 12px;
-  }
-}
-
-
-
-
