@@ -8,7 +8,7 @@
     background: #ED6400;
     box-sizing:  border-box;
     border-radius: 2px;
-    opacity: 0.8;
+    opacity: 0.85;
     z-index: 30;
     margin: 0 auto;
 }
@@ -24,6 +24,7 @@
 
 .form_box .inputBox {
     position: relative;
+    -webkit-appearance: none;
 }
 
 .form_box .inputBox input {
@@ -38,6 +39,11 @@
     outline: none;
     background: transparent;
     -webkit-appearance: none;
+}
+
+.form_box .inputBox input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #ED6400 inset;
+    -webkit-text-fill-color: #fff;
 }
 
 .form_box .inputBox label {

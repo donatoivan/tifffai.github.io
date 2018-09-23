@@ -72,7 +72,7 @@
     padding: 0;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     text-transform: uppercase;
     transition: 0.5s;
     transform: translateY(-50px);
@@ -86,7 +86,7 @@
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 18px;
     transition: 0.5s;
     transform: translateY(50px);
     opacity: 0;
