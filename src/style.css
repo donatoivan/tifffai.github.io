@@ -536,8 +536,13 @@ p .light {
     visibility: visible;
   }
 
-  .mylogo img {
-    width: 100px;
+  .mylogo-box img {
+    width: 160px;
+  }
+
+  .social-media-box {
+    display: flex;
+    justify-content: flex-end;
   }
   
   .mylogo-box {
