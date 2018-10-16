@@ -27,7 +27,8 @@
     -webkit-appearance: none;
 }
 
-.form_box .inputBox input {
+.form_box .inputBox input, 
+.form_box .inputBox textarea {
     width: 100%;
     padding: 10px 0;
     font-size: 14px;
@@ -41,7 +42,8 @@
     -webkit-appearance: none;
 }
 
-.form_box .inputBox input:-webkit-autofill {
+.form_box .inputBox input:-webkit-autofill, 
+.form_box .inputBox textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #ED6400 inset;
     -webkit-text-fill-color: #fff;
 }
@@ -61,7 +63,9 @@
 }
 
 .form_box .inputBox input:focus ~ label,
-.form_box .inputBox input:valid ~ label {
+.form_box .inputBox input:valid ~ label,
+.form_box .inputBox textarea:focus ~ label,
+.form_box .inputBox textarea:valid ~ label {
     top: -18px;
     left: 0;
     color: #141519;
@@ -72,6 +76,8 @@
     background: transparent;
     border: none;
     outline: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     color: #ffffff;
     background: #141519;
     padding: 10px 50px;
