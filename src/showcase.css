@@ -49,6 +49,7 @@
     width: 130%;
     height: auto;
     transition: 0.5s;
+    
 }
 
 .container_showcase .box_showcase:hover .imgBox img {
